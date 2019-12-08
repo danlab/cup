@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head lang="ja">
+<meta charset="utf-8">
+<title>陶芸</title>
+<script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+</head>
+<body>
+<a-scene>
+  <a-sky color="#ECECEC"></a-sky>
+  <a-assets>
+    <a-asset-item id="cup-obj" src="./cup.obj"></a-asset-item>
+    <a-asset-item id="cup-mtl" src="./cup.mtl"></a-asset-item>
+  </a-assets>
+  <a-entity obj-model="obj: #cup-obj; mtl: #cup-mtl" position="0 1.5 -2" rotation="0 0 0" animation="property:rotation; dur:10000; to:0 360 720; easing:linear; loop:true">
+  </a-entity>
+</a-scene>
+</body>
+</html>
